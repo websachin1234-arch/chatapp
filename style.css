@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar {
+    max-width: 1440px;
+    height: 40px;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600 !important;
+    font-size: 26px !important;
+    line-height: 116px;
+    letter-spacing: -2% !important;
+}
+
+span {
+    font-family: Poppins, sans-serif;
+    font-weight: 275 !important;
+    font-size: 26px !important;
+}
+
+.navbar>a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar>a span {
+    font-weight: 400;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: Roboto, sans-serif !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    transition: all 300ms;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn {
+    border: 1px solid;
+    border-color: white;
+    background: white;
+    color: #2878F0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: rgb(75, 141, 255);
+    color: white;
+    transition: all 300ms;
+}
+
+.navbar {
+    transition: all 0.85s ease-in-out;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 span {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+
+.menu-checkbox {
+    position: relative;
+    z-index: 2;
+}
+
+.menu-button {
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+}
+
+.input-checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: black;
+        color: white;
+    }
+
+    .input-checkbox-label {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    #menu-checkbox:checked~.nav-menu {
+        left: 0;
+        width: 50%;
+    }
+}
+
+.chat {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 115.99999999999999%;
+    letter-spacing: -2%;
+    color: rgba(30, 113, 255, 1);
+}
+
+.icon {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+}
+
+button {
+    font-family: "Roboto", sans-serif !important;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+}
+
+.mockup {
+    box-shadow: 0px 20px 75px 0px rgba(43, 53, 62, 0.15);
+}
+
+ul li a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: inherit;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-white);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.top-button {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #2878F0;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-radius: 60px;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 100%;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: #2878F0;
+    color: #fff;
+}
+
+
+@media (min-width: 640px) {
+    .top-button {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 393px) {
+    .top-button {
+        padding: 11px 17px;
+    }
+}

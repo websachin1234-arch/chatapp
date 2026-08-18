@@ -5,42 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatApp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel=" icon" href="./assets/images/png/favicon-96x96.png" type="image/x-icon">
+
+     
+
+    </style>
+
 </head>
 
 <body>
-    <section class="bg-[rgba(30,113,255,1)]
-               min-h-[700px]
-               lg:min-h-[850px]
-               xl:min-h-[1007px]">
+
+    <section class="bg-hero">
+        <nav class="navbar transition-all duration-700 ease-in-out mx-auto px-5
+                   ">
+            <a class="logo" href="#">
+                chat<span>app</span>
+            </a>
+            <input type="checkbox" hidden id="menu-checkbox" class="menu-checkbox">
+            <label for="menu-checkbox" class="input-checkbox-label">
+                <span class="menu-button"></span>
+                <span class="menu-button"></span>
+                <span class="menu-button"></span>
+            </label>
+            <div class="nav-menu">
+                <a href="#">Product</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <a href="#">Log in</a>
+                <button class="btn">
+                    Try It Free
+                </button>
+
+            </div>
+        </nav>
         <div class="w-full
-                   max-w-[1440px]
+                   max-w-[1240px]
                    mx-auto
                    px-5
-                   sm:px-8
-                   lg:px-10">
-            <nav class="navbar transition-all duration-700 ease-in-out">
-                <a class="logo" href="#">
-                    chat<span>app</span>
-                </a>
-                <input type="checkbox" hidden id="menu-checkbox" class="menu-checkbox">
-                <label for="menu-checkbox" class="input-checkbox-label">
-                    <span class="menu-button"></span>
-                    <span class="menu-button"></span>
-                    <span class="menu-button"></span>
-                </label>
-                <div class="nav-menu">
-                    <a href="#">Product</a>
-                    <a href="#">Service</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Log in</a>
-                    <button class="btn">
-                        Try It Free
-                    </button>
+                  
+                   lg:px-10
+                   lg:pt-[135px]
+                   lg:pb-[160px]
+                   md:py-[80px]
+                   min-[425px]:py-[60px]
+                   min-[320px]:py-[40px]">
 
-                </div>
-            </nav>
             <div class="
                 max-w-[1160px]
                 mx-auto
@@ -48,27 +59,25 @@
                  flex-col
                  lg:flex-row
                  justify-between
-                  items-center
+                  max-[1024px]:items-center  
+                
                  gap-[50px]
                xl:gap-[70px]
-                mt-16
-                lg:mt-[100px]
-               xl:mt-[135px]">
+                
+               ">
                 <div class="w-full
                            max-w-[499px]
                            lg:flex-1
                            flex
-                           flex-col                        
+                           flex-col 
+                                               
                        items-left">
                     <h1 class="text-white
                                text-[75px]
+                               pt-[86px]
                                sm:text-[48px]
                                md:text-[58px]
-                               lg:text-[68px]
                                xl:text-[75px]
-                               pt-5
-                               lg:pt-[50px]
-                               xl:pt-[86px]
                                font-semibold
                                font-Poppins
                                leading-[120%]
@@ -90,13 +99,12 @@
                                sm:flex-row
                                gap-3
                                sm:gap-[20px]
-                               lg:gap-[36px]
                                mt-8
                                lg:mt-[60px]">
-                        <button class="top-button">
+                        <button class="top-button btn-1">
                             Try for free
                         </button>
-                        <button class="top-button">
+                        <button class="top-button btn-2">
                             Get Demo
                         </button>
                     </div>
@@ -109,19 +117,21 @@
                                max-w-[585px]
                                flex
                                items-center
-                               justify-center
-                               max-[1024px]:pb-16">
-                        <img src="./hero.svg" alt="Hero" class="w-full h-auto">
+                               justify-center">
+                        <img src="./assets/images/svg/hero.svg" alt="Hero" class="w-full h-auto">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="bg-white
-               pt-[60px]
-               sm:pt-[70px]
-               lg:pt-[90px]
-               pb-[70px]">
+              
+              lg:pb-[180px]
+              lg:pt-[90px]
+              px-5
+                md:py-[80px]
+                  min-[425px]:py-[60px] 
+                  min-[320px]:py-[40px]">
         <div class="w-full
                    max-w-[1200px]
                    mx-auto">
@@ -134,7 +144,7 @@
                            w-full
                            max-w-[952px]
                            mx-auto
-                           font-[500]
+                           font-medium
                            font-Poppins
                            leading-[128%]">
                     Instant Team Chats
@@ -162,9 +172,8 @@
             </div>
             <div class="mt-10 sm:mt-[50px] lg:mt-[60px] flex
                        justify-center
-                       pb-[180px]
-                       overflow-hidden pb">
-                <img src="./mockup (1).svg" alt="Team Chat" class="w-full
+                       ">
+                <img height="663px" width="1061px" src="./assets/images/webp/mockup.webp" alt="Team Chat" class="w-full
                            max-w-[1061px]
                            h-auto
                            mockup">
@@ -174,40 +183,42 @@
     <section class="bg-[#EEF4FF]
                flex
                items-center
-               pt-[60px]
-               sm:pt-[80px]
-               lg:pt-[124px]
-               pb-[60px]
-               sm:pb-[90px]
-               lg:pb-[137px]">
+               max-[1024px]:px-5
+               lg:pt-[124px] lg:pb-[137px] md:py-[80px] min-[425px]:py-[60px]
+                   min-[320px]:py-[40px] min-[1441px]:justify-center
+               ">
         <div class="w-full
-                   max-w-[1440px]
+                   max-w-[1441px]
+                   min-[1441px]:max-w-[1162px]
                    flex
                    flex-col
                    lg:flex-row
                    items-center
+                   min-[1441px]:justify-center
                    gap-[30px]
                    lg:gap-[100px]
-                   sm:pr-8">
+                   ">
             <div class="w-full
                        lg:w-1/2
-                       relative
+                       
                        flex
                        justify-center">
-                <img src="./Group 16.svg" alt="Small Business" class="w-full
+                <img src="./assets/images/svg/Group 16.svg" alt="Small Business" class="w-full
                            max-w-[760px]
+                           mr-20 max-[1024px]:mr-0
+                           min-[1441px]:mr-0
                            h-auto">
             </div>
             <div class="w-full
                        lg:w-1/2
-                       max-[640px]:px-5
+                      
                        max-w-[467px] text-center">
                 <h2 class="text-[#293241]
                            text-[30px] flex text-left
                            sm:text-[35px]
                            md:text-[40px]
                            lg:text-[45px]
-                           font-[500]
+                           font-medium
                            leading-[128%]
                            font-Poppins">
                     Perfect Solution for
@@ -231,28 +242,28 @@
                            lg:gap-[30px]
                            mt-8
                            lg:mt-[60px]">
-                    <button class="bg-white
+                    <button class="bg-[#2878F0]
                                border
-                               border-white
-                               text-[#2878F0]
-                               hover:bg-[#2878F0]
+                               border-[#1E71FF]
+                               text-white
+                               hover:bg-[#E9F1FF]
                                p-3
                                 md:pl-[45px] md:pr-[46px] md:pt-[14px] md:pb-[16px]
                                hover:cursor-pointer
                                transition-all
                                leading-[100%]
                                duration-300
-                               hover:text-white
+                               hover:text-[#2878F0]
                                rounded-full
                                text-[17px]
                                sm:text-[17px] font-medium">
                         Try it Free
                     </button>
-                    <button class="bg-white
+                    <button class="bg-[#E9F1FF]
                                border
                                p-3
                                  md:pl-[45px] md:pr-[46px] md:pt-[14px] md:pb-[16px]
-                               border-white
+                               border-[#1E71FF]
                                text-[#2878F0]
                                hover:bg-[#2878F0]
                                hover:cursor-pointer
@@ -283,11 +294,12 @@
                     <div class="text-[#FF9D00]
                                text-[16px]
                                pt-[3px]">
-                        <img src="./Group 11.svg" width="131" height="19" alt="Rating">
+                        <img src="./assets/images/svg/stars.svg" width="131" height="19" alt="Rating">
                     </div>
-                    <h1 class="stars
+                    <h5 class="stars
                                font-bold
-                               text-[15px]
+                               text-left
+                               text-[18px]
                                sm:text-lg
                                text-[rgba(43,53,62,0.7)]
                                leading-[162%]">
@@ -296,22 +308,26 @@
                             use Chatapp<br class="break">and they rate it as
                         </span>
                         5-stars
-                    </h1>
+                    </h5>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="border-t-[6px]
-               border-[#eaf1ff]
-               bg-white">
+    <footer class="
+               
+               bg-white
+               px-5
+                  
+                   pb-[30px]
+                   lg:pt-[90px]
+                   md:pt-[80px]
+                   min-[425px]:pt-[60px]
+                   min-[320px]:pt-[40px]">
         <div class="max-w-[1162px]
                    mx-auto
-                   px-5
-                   sm:px-9
-                   pt-[60px]
-                   sm:pt-[70px]
-                   lg:pt-[90px]
-                   pb-[30px] max-[1024px]:px-10">
+                   
+                   
+                ">
             <div class="grid
                        grid-cols-1
                        gap-[50px]
